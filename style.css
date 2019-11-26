@@ -1,0 +1,226 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    color:#FFF;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*start*/
+body{
+    background: #000;
+    font-family: sans, Arial, Helvetica, sans-serif;
+}
+section{
+    position: fixed;
+    height: 100%;
+    top:0;
+    left: 0;
+    right:0;
+}
+.titleBox{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+nav{
+    position: relative;
+    z-index: 2;
+}
+nav a{
+    position: relative;
+    font-size: 4.5em;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    min-height: 72px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all .2s ease;
+}
+.nav_title{
+    position: absolute;
+    height: 36px;
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nav_title:first-child{
+    animation: navFirst .8s ease;
+    animation-delay: .4s;
+}
+@keyframes navFirst{
+    0%{
+        top: 18px;
+    }
+    100%{
+        top: 0;
+    }
+}
+.nav_title:first-child > span{
+    display: block;
+    transform: translateY(0);
+}
+.nav_title:last-child{
+    top:36px;
+    animation: navLast .8s ease;
+    animation-delay: .4s;
+}
+@keyframes navLast{
+    0%{
+        top: 18px;
+    }
+    100%{
+        top: 36px;
+    }
+}
+.nav_title:last-child > span{
+    display: block;
+    transform: translateY(-50%);
+}
+.hoverContent{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.streetHover{
+    background-image: url(./images/street.jpg);
+    opacity: .6;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: 50%;
+    display: none;
+}
+.accessoriesHover{
+    display: none;
+}
+.accessoriesHover img{
+    position: absolute;
+}
+.magazineHover{
+    display: none;
+}
+.magazineHover img{
+    position: absolute;
+    width: 200px;
+}
+.videoHover{
+    display:none;
+}
+.swagUpHover{
+    display: none;
+}
+.swagUpHover ul{
+    position: relative;
+}
+.swagUpHover ul li{
+    opacity: 0.25;
+    color: #FFF;
+    position: absolute;
+}
+.swagUpHover ul li:first-child{
+    left: 10.15vw;
+    top: 14vh;
+}
+.swagUpHover ul li:nth-child(2){
+    left: 70.43vw;
+    top: 10vh;
+}
+.swagUpHover ul li:nth-child(3){
+    left: 25vw;
+    top: 32vh;
+}
+.swagUpHover ul li:nth-child(4){
+    left: 77.3vw;
+    top: 36vh;
+}
+.swagUpHover ul li:nth-child(5){
+    left: 11.2vw;
+    top: 42vh;
+}
+.swagUpHover ul li:nth-child(6){
+    left: 90.5vw;
+    top: 50vh;
+}
+.swagUpHover ul li:nth-child(7){
+    left: 20vw;
+    top: 55vh;
+}
+.swagUpHover ul li:nth-child(8){
+    left: 75vw;
+    top: 60vh;
+}
+.swagUpHover ul li:nth-child(9){
+    left: 15vw;
+    top: 72vh;
+}
+.swagUpHover ul li:nth-child(10){
+    left: 70vw;
+    top: 76vh;
+}
+.swagUpHover ul li:nth-child(11){
+    left: 10vw;
+    top: 82vh;
+}
+.swagUpHover ul li:nth-child(12){
+    left: 88vw;
+    top: 85vh;
+}
+.opacity1{
+    opacity: 1;
+}
+.whatHover{
+    display: none;
+    color:yellow;
+    width: 1400px;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.footer{
+    position: absolute;
+    bottom: 5vh;
+    width: 100%;
+    text-align: center;
+}

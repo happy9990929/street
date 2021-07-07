@@ -36,17 +36,17 @@ nav_accessories.addEventListener("mouseenter", function (e) {
   imgCount += 1;
   switch (imgCount) {
     case 1:
-      accessoriesImg.setAttribute("src", "../images/cap.png");
+      accessoriesImg.setAttribute("src", "/images/cap.png");
       accessoriesImg.style.top = "100px";
       accessoriesImg.style.left = "200px";
       break;
     case 2:
-      accessoriesImg.setAttribute("src", "../images/shoes.png");
+      accessoriesImg.setAttribute("src", "/images/shoes.png");
       accessoriesImg.style.top = "300px";
       accessoriesImg.style.left = "900px";
       break;
     case 3:
-      accessoriesImg.setAttribute("src", "../images/glass.png");
+      accessoriesImg.setAttribute("src", "/images/glass.png");
       accessoriesImg.style.top = "50px";
       accessoriesImg.style.left = "1100px";
       imgCount = 0;

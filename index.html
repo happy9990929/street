@@ -1,111 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Street Clothes</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="shortcut icon" href="./images/favicon.ico">
-  <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/style.css">
-  <title>Street Clothes</title>
-</head>
-
-<body>
-  <section>
-    <div class="titleBox">
-      <nav class="nav">
-        <a href="" class="navItem" id="street" onmouseenter="showNav('street')" onmouseleave="originNav()">
-          <span class="nav_title">
-            <span>Street</span>
-          </span>
-          <span class="nav_title">
-            <span>Street</span>
-          </span>
-        </a>
-        <a href="" class="navItem" id="accessories" onmouseenter="showNav('accessories')" onmouseleave="originNav()">
-          <span class="nav_title">
-            <span>Accessories</span>
-          </span>
-          <span class="nav_title">
-            <span>Accessories</span>
-          </span>
-        </a>
-        <a href="" class="navItem" id="magazine" onmouseenter="showNav('magazine')" onmouseleave="originNav()">
-          <span class="nav_title">
-            <span>A Magazine</span>
-          </span>
-          <span class="nav_title">
-            <span>A Magazine</span>
-          </span>
-        </a>
-        <a href="" class="navItem" id="video" onmouseenter="showNav('video')" onmouseleave="originNav()">
-          <span class="nav_title">
-            <span>Shade Interlude</span>
-          </span>
-          <span class="nav_title">
-            <span>Shade Interlude</span>
-          </span>
-        </a>
-        <a href="" class="navItem" id="swagUp" onmouseenter="showNav('swagUp')" onmouseleave="originNav()">
-          <span class="nav_title">
-            <span>Turn My Swag Up</span>
-          </span>
-          <span class="nav_title">
-            <span>Turn My Swag Up</span>
-          </span>
-        </a>
-        <a href="" class="navItem" id="what" onmouseenter="showNav('what')" onmouseleave="originNav()">
-          <div id="what_title">
+  <body>
+    <section>
+      <div class="titleBox">
+        <nav class="nav">
+          <a href="" class="navItem" id="street" onmouseenter="showNav('street')" onmouseleave="originNav()">
             <span class="nav_title">
-              <span>What do you want</span>
+              <span>Street</span>
             </span>
             <span class="nav_title">
-              <span>What do you want</span>
+              <span>Street</span>
             </span>
-          </div>
+          </a>
+          <a href="" class="navItem" id="accessories" onmouseenter="showNav('accessories')" onmouseleave="originNav()">
+            <span class="nav_title">
+              <span>Accessories</span>
+            </span>
+            <span class="nav_title">
+              <span>Accessories</span>
+            </span>
+          </a>
+          <a href="" class="navItem" id="magazine" onmouseenter="showNav('magazine')" onmouseleave="originNav()">
+            <span class="nav_title">
+              <span>A Magazine</span>
+            </span>
+            <span class="nav_title">
+              <span>A Magazine</span>
+            </span>
+          </a>
+          <a href="" class="navItem" id="video" onmouseenter="showNav('video')" onmouseleave="originNav()">
+            <span class="nav_title">
+              <span>Shade Interlude</span>
+            </span>
+            <span class="nav_title">
+              <span>Shade Interlude</span>
+            </span>
+          </a>
+          <a href="" class="navItem" id="swagUp" onmouseenter="showNav('swagUp')" onmouseleave="originNav()">
+            <span class="nav_title">
+              <span>Turn My Swag Up</span>
+            </span>
+            <span class="nav_title">
+              <span>Turn My Swag Up</span>
+            </span>
+          </a>
+          <a href="" class="navItem" id="what" onmouseenter="showNav('what')" onmouseleave="originNav()">
+            <div id="what_title">
+              <span class="nav_title">
+                <span>What do you want</span>
+              </span>
+              <span class="nav_title">
+                <span>What do you want</span>
+              </span>
+            </div>
 
-          <div class="whatHover overflow-hidden" data-action="what">
-            <span id="marquee">What Do You Want What Do You Want </span>
-            <span id="marquee2"></span>
-          </div>
-        </a>
-      </nav>
+            <div class="whatHover overflow-hidden" id="showWhat">
+              <span id="marquee">What Do You Want What Do You Want </span>
+              <span id="marquee2"></span>
+            </div>
+          </a>
+        </nav>
 
-      <div class="hoverContent">
-        <div class="streetHover" id="showStreet"></div>
-        <div class="accessoriesHover" id="showAccessories">
-          <img src="./images/cap.png" />
-        </div>
-        <div class="magazineHover" id="showMagazine" data-action="magazine"></div>
-        <div class="videoHover" data-action="video">
-          <video loop width="100%" preload="none" muted="muted">
-            <source src="./images/video.mp4" type="video/mp4" />
-          </video>
-        </div>
-        <div class="swagUpHover" data-action="swagUp">
-          <ul>
-            <li>T</li>
-            <li>U</li>
-            <li>R</li>
-            <li>N</li>
-            <li>M</li>
-            <li>Y</li>
-            <li>S</li>
-            <li>W</li>
-            <li>A</li>
-            <li>G</li>
-            <li>U</li>
-            <li>P</li>
-          </ul>
+        <div class="hoverContent">
+          <div class="streetHover" id="showStreet"></div>
+          <div class="accessoriesHover" id="showAccessories">
+            <img src="./images/cap.png" />
+          </div>
+          <div class="magazineHover" id="showMagazine" data-action="magazine"></div>
+          <div class="videoHover" id="showVideo">
+            <video loop width="100%" preload="none" muted="muted">
+              <source src="./images/video.mp4" type="video/mp4" />
+            </video>
+          </div>
+          <div class="swagUpHover" id="showSwagUp">
+            <ul>
+              <li>T</li>
+              <li>U</li>
+              <li>R</li>
+              <li>N</li>
+              <li>M</li>
+              <li>Y</li>
+              <li>S</li>
+              <li>W</li>
+              <li>A</li>
+              <li>G</li>
+              <li>U</li>
+              <li>P</li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-  <footer class="footer">
-    WANG BRAND / TREND & ATTITUDE / EMAIL / INSTAGRAM / 0934-296646
-  </footer>
-  <script src="./js/script.js"></script>
-</body>
-
+    </section>
+    <footer class="footer">WANG BRAND / TREND & ATTITUDE / EMAIL / INSTAGRAM / 0934-296646</footer>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
